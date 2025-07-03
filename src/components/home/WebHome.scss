@@ -133,28 +133,56 @@ body{
   height: 16rem;
   width: 25rem;
   bottom: 10rem;
-  right: 20vw;
+  right: 15vw;
   overflow: hidden;
 }
-@media (min-height: 500px) {
+@media (min-height: 700px) {
   .imageContainer{
-    height: 600px;
+    height: 500px;
   }
-  .contentContainer{
+  
+//   .contentContainer{
 
-  bottom: 5rem;
-  left:10vw;
-  padding:1.1rem
-}
+//   // bottom: 5rem;
+//   left:10vw;
+//   padding:1.1rem
+// }
  
 }
+
 .contentContainer{
   position:absolute;
-  border: 1px solid red;
-  bottom: 10rem;
+  // border: 1px solid red;
+  bottom: 13rem;
   left:10vw;
-  padding:1.1rem
+  padding:16px;
+  flex-direction: column;
+  gap: 12px;
+  display: flex;
+  
 }
 .contentText{
-  font-size: 1.2rem;
+  font-size: 1rem;
+  color: #909090;
+   font-family: "Comic Sans MS", "MV Boli", "Ink Free", cursive;
+
+}
+.contentTextHeading{
+  font-size: 2rem;
+  font-weight: 600;
+  font-family:"Comic Sans MS", "MV Boli", "Ink Free", cursive; 
+  
+}
+.contentTextSubHeading{
+  font-size: 1.5rem;
+  
+}
+.iconBackground{
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.icon{
+  height: 1.5rem;
+  width: 1.5rem;
+
 }
