@@ -17,6 +17,7 @@
   background: #ccc;
   transform: skewX(-10deg);
   transform-origin: top right;
+  
 }
 
 .right-half {
@@ -33,9 +34,11 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    padding: 20px;
+    padding: 1rem;
     display: flex;
-    width: 100%;
+    width: 96vw;
+    align-content: center;
+    
 
 }
 .navBar2{
@@ -43,15 +46,22 @@
     flex-direction: row;
     display: flex;
     color: #ccc;
+    
     // border: 1px solid #fff;
-    padding-left: 90px;
-    padding-right: 40px;
+    // padding-left: 90px;
+    // padding-right: 40px;
     // justify-content: space-between;
-    gap: 50px;
+    gap: 3vw;
+    font-size: 1.3rem;
+    width: 100vw;
+    justify-content: center;
+
     
 }
 .navBar1{
     flex: 1;
+    // height: 40px;
+    // border: 1px solid black;
     // padding-left: 10%;
 
 }
@@ -68,4 +78,111 @@ body{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  border: 1px solid #fff;
+}
+.gif{
+  height: 5rem;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.footerHome{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0rem 1.5rem;
+  color: #ccc;
+  background-color: #000;
+  overflow-y: scroll;
+  height: 10rem;
+
+}
+.footerText{
+  font-size: 1.2rem;
+ font-family: "Comic Sans MS", "MV Boli", "Ink Free", cursive;
+// font-family: "Great Vibes", cursive;
+//  font-family: "Dancing Script", cursive;
+ line-height: 1.5rem;
+}
+.centerContainer{
+  justify-content: space-between;
+  border:1px solid red;
+  height: 400px;
+  width: 400px;
+}
+.cut-image {
+ right: 0;
+  overflow: hidden;
+  width: 400px; /* Adjust to your preferred width */
+  height: 600px; /* Adjust to your image aspect ratio */
+}
+
+.cut-image-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+  // mix-blend-mode: multiply;
+ 
+}
+.imageContainer{
+  position:absolute;
+  // border:1px solid red;
+  height: 16rem;
+  width: 25rem;
+  bottom: 10rem;
+  right: 15vw;
+  overflow: hidden;
+}
+@media (min-height: 700px) {
+  .imageContainer{
+    height: 500px;
+  }
+  
+//   .contentContainer{
+
+//   // bottom: 5rem;
+//   left:10vw;
+//   padding:1.1rem
+// }
+ 
+}
+
+.contentContainer{
+  position:absolute;
+  // border: 1px solid red;
+  bottom: 13rem;
+  left:10vw;
+  padding:16px;
+  flex-direction: column;
+  gap: 12px;
+  display: flex;
+  
+}
+.contentText{
+  font-size: 1rem;
+  color: #909090;
+   font-family: "Comic Sans MS", "MV Boli", "Ink Free", cursive;
+
+}
+.contentTextHeading{
+  font-size: 2rem;
+  font-weight: 600;
+  font-family:"Comic Sans MS", "MV Boli", "Ink Free", cursive; 
+  
+}
+.contentTextSubHeading{
+  font-size: 1.5rem;
+  
+}
+.iconBackground{
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.icon{
+  height: 1.5rem;
+  width: 1.5rem;
+
 }
