@@ -1,0 +1,71 @@
+.bg-split {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+}
+
+.left-half,
+.right-half {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100vh;
+}
+
+.left-half {
+  left: 0;
+  background: #ccc;
+  transform: skewX(-10deg);
+  transform-origin: top right;
+}
+
+.right-half {
+  right: 0;
+  background: black;
+  transform: skewX(-10deg);
+  transform-origin: top left;
+}
+.navBar{
+    justify-content: "center";
+    align-items: "center";
+    // border: 1px solid #000;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+
+}
+.navBar2{
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    color: #ccc;
+    // border: 1px solid #fff;
+    padding-left: 90px;
+    padding-right: 40px;
+    // justify-content: space-between;
+    gap: 50px;
+    
+}
+.navBar1{
+    flex: 1;
+    // padding-left: 10%;
+
+}
+.selectedTab{
+    border-radius: 30px;
+    background-color: #ccc;
+    color: #000;
+    // height: 50px;
+    // align-items: center;
+    padding: 0px 20px;
+}
+body{
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
