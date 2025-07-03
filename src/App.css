@@ -28,3 +28,6 @@
 body{
   background-color: black;
 }
+html{
+    font-size: clamp(12px, 1.5vw,18px );
+}
