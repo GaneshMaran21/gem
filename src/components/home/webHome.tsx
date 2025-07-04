@@ -9,20 +9,18 @@ import GamilIcon from '../../assets/svg/borderIcon.svg';
 import BorderIcon from '../../assets/svg/gmailIcon.svg';
 import GitIcon from '../../assets/svg/gitIcon.svg';
 import LinkedIcon from '../../assets/svg/linkedIcon.svg';
+import whatsappIcon from '../../assets/svg/whatsapp.svg';
 // import {ReactComponent as GamilIcon} from '../../assets/svg/gmailIcon.svg'
 import FooterHome from './footer';
 import { IconType } from '../../utils/enum/iconType';
 import userInfo from '../../userInfo/userInfo';
+import Navbar from '../navbar/navbar';
 
 // import gif from '../../assets/gif/atom.gif';
 
 
 const WebHome = () => {
-  const navbar = ['About Me', 'Skills', 'Portfolio', 'Contact Me']
-  const [selectedTitle, setSelectedTitle] = useState(navbar.length - 1)
-  const handleTabSelection = (i) => {
-    setSelectedTitle(i)
-  }
+  
 
   const handleIconClick = (type: string) => {
     debugger;
@@ -36,9 +34,18 @@ const WebHome = () => {
       case IconType.LINKEDIN:
         window.open(`https://www.linkedin.com/in/${userInfo?.userLinked}`, "_blank");
         break;
+      case IconType.WHATSAPP:
+        const message = "Hello Ganesh, I want to connect with you"
+        const encodedMessage = encodeURIComponent(message);
+        window.open(`http://wa.me/918903835974?text=${encodedMessage}`,"_black")
       default: break;
     }
   }
+  const handleWhatsAppClick = () => {
+  const message = "Hello Ganesh, I want to connect with you.";
+  const encodedMessage = encodeURIComponent(message);
+  window.open(`https://wa.me/911234567890?text=${encodedMessage}`, "_blank");
+};
   console.log(IconType, "icons")
   return (
     <>
@@ -47,22 +54,7 @@ const WebHome = () => {
         <div className="left-half"></div>
         <div className="right-half"></div>
       </div>
-      <div className="navBar">
-        <div className='navBar1'>
-          <img src={reactSvg} className='gif' />
-          {/* <ReactIcon/> */}
-        </div>
-        <div className='navBar2'>
-          {navbar.map((name, ind) => {
-            return (
-              <div className={selectedTitle === ind ? 'selectedTab' : ""}>
-                <h3 style={{ flexWrap: "nowrap", cursor: 'pointer', fontSize: "1rem" }} onClick={() => handleTabSelection(ind)}>{name}</h3>
-              </div>
-            )
-          })}
-
-        </div>
-      </div>
+      <Navbar/>
       <div className="imageContainer">
         <img src={Myimage1} className="cut-image-img" />
       </div>
@@ -105,6 +97,14 @@ const WebHome = () => {
             </div>
             <div style={{ position: "absolute" }}>
               <img src={LinkedIcon} className='icon' />
+            </div>
+          </div>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }} onClick={() => handleIconClick("whatsApp")}>
+            <div style={{ position: "relative" }}>
+              <img className='iconBackground' src={BorderIcon} />
+            </div>
+            <div style={{ position: "absolute" }}>
+              <img src={whatsappIcon} className='icon' />
             </div>
           </div>
 

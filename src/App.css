@@ -2,6 +2,7 @@
   position: fixed;
   inset: 0;
   overflow: hidden;
+  background-color: black;
 }
 
 .left-half,
@@ -19,14 +20,20 @@
   transform-origin: top right;
 }
 
+
 .right-half {
-  right: 0;
-  background: black;
+  position: absolute;
+  top: -1px; /* ⬅️ This hides the 1px white gap */
+  width: 50%;
+  height: calc(100vh + 1px); /* Extend height slightly */
   transform: skewX(-10deg);
-  transform-origin: top left;
 }
-body{
-  background-color: black;
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background: black;
+  overflow-x: hidden; /* Prevent unwanted scroll from skew */
 }
 html{
     font-size: clamp(12px, 1.5vw,18px );

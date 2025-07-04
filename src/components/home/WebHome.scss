@@ -38,7 +38,7 @@
     display: flex;
     width: 96vw;
     align-content: center;
-    z-index: 2;
+    z-index: 1000;
     
 
 }
@@ -74,12 +74,20 @@
     // align-items: center;
     padding: 0px 20px;
 }
+.selectedTab2{
+    border-radius: 30px;
+    background-color: #000;
+    color: #ccc;
+    // height: 50px;
+    // align-items: center;
+    padding: 0px 20px;
+}
 body{
   background-color: black;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  border: 1px solid #fff;
+
 }
 .gif{
   height: 5rem;
@@ -104,6 +112,13 @@ body{
  font-family: "Comic Sans MS", "MV Boli", "Ink Free", cursive;
 // font-family: "Great Vibes", cursive;
 //  font-family: "Dancing Script", cursive;
+ line-height: 1.5rem;
+}
+.footerText2{
+  font-size: 1.2rem;
+ 
+// font-family: "Great Vibes", cursive;
+  font-family: "Dancing Script", cursive;
  line-height: 1.5rem;
 }
 .centerContainer{
