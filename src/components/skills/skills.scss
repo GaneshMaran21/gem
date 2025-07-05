@@ -1,0 +1,71 @@
+.heading{
+    border: 3px solid black;
+    padding: 1rem 1.1rem;
+    max-width: max-content;
+    display: flex;
+    min-width: max-content;
+    // margin-left: 50vw;
+    // position: absolute;
+    
+}
+.skillContainer{
+    position: absolute;
+    top: 8rem;
+    width: 100%;
+    // border: 1px solid black;
+    padding: 1rem;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+    background-color: #ccc;
+
+    // height: %;
+}
+.headingText{
+     font-family: 'Montserrat', sans-serif;
+  font-weight: 700; 
+  letter-spacing: 0.3em;
+}
+.using{
+ flex-direction: column;
+ padding: 1rem;
+ gap :12px;
+ display: flex;
+ width: 100%;
+ 
+}
+.usingText{
+ font-family: 'Montserrat', sans-serif;
+  font-weight: 500; 
+  letter-spacing: 0.1em; 
+  text-transform: uppercase;
+}
+.usingIcon{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    // border: 1px solid #fff;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.usingIconText{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300; 
+  letter-spacing: 0.2em; 
+  text-transform: uppercase;
+}
+@media (max-height: 500px) {
+  .usingIcon {
+    height: 150px;
+    overflow-y: auto;
+    scrollbar-width: 10px;
+    
+  }
+
+  .using {
+    height: 180px; 
+    overflow: hidden;
+  }
+}

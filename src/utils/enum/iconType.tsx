@@ -1,5 +1,6 @@
  export enum IconType {
     MAIL="email",
     GIT="git",
-    LINKEDIN="linkedIn"
+    LINKEDIN="linkedIn",
+    WHATSAPP="whatsApp"
 }
