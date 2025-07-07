@@ -1,21 +1,21 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import './webAbout.scss'
 
-const WebAbout = () => {
+const WebContact = () => {
   const navigate=useNavigate()
   return (
-    <div style={{display:"flex",justifyContent:"center",alignItems:"center",gap:8,height:"100%"}}  >
-       <div style={{padding:"0px 16px ",color:"#000",backgroundColor:"#fff",borderRadius:16}} onClick={()=>navigate(-1)}>
-      <h5>
-        Go Back
-      </h5>
-    </div>
-      <p style={{color:"#fff"}}>
-          Hope ! Connect You soon
-      </p>
+    <div style={{backgroundColor:'#ccc',width:"100vw",height:"100vh",alignContent:"center",justifyContent:"center",display:"flex",top:"50%"}}>
+      <div className='inputContainer'>
+            <input type='text' className='inputBox' placeholder='Enter Your Name' required/>
+            <input type='text' className='inputBox' placeholder='Enter Your Email' required/>
+            <input type='text' className='inputBox' placeholder='Phone Number' required/>
+            <input type='textarea' className='inputTextBox' placeholder='Phone Number' required/>
+      </div>
+
    
     </div>
   )
 }
 
-export default WebAbout
+export default WebContact

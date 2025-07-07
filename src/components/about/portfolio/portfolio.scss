@@ -1,0 +1,120 @@
+.portfolio-section {
+  padding: 15px 20px;
+  background-color: #060606;
+  text-align: center;
+//   margin-top: 20px;
+}
+
+.portfolio-title {
+  font-size: 2rem;
+//   margin-bottom: 40px;
+  font-weight: bold;
+  color: #ccc;
+
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+//   border: 1px solid #fff;
+
+}
+
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.484);
+  
+}
+.portfolio-card2 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(218, 131, 131, 0.691);
+  
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover .portfolio-image {
+  transform: scale(1.05);
+}
+.portfolio-card2:hover .portfolio-image {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.portfolio-card:hover .overlay {
+  opacity: 1;
+}
+.portfolio-card2:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+.navigateBar{
+    // border: 1px solid #ccc;
+    
+    width: 200px;
+    position: absolute;
+    right: 0;
+    padding: 30px;
+    // border: 1px solid #fff;
+    margin-top: 10px;
+
+
+    
+}
+.navigationIcon{
+    border: 1px solid #ccc;
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    position:absolute;
+    right: 0;
+    justify-content:center;
+    align-items: center;
+    
+}
+.icons{
+    // border: 1px solid #ccc;
+    justify-content: flex-end;
+    display: flex;
+    right: 30px;
+    position:absolute;
+
+}
+.icons:hover{
+  transform: scale(1.5);
+  border: 1px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.484);
+  
+
+}
