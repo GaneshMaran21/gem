@@ -10,11 +10,14 @@ import BorderIcon from '../../assets/svg/gmailIcon.svg';
 import GitIcon from '../../assets/svg/gitIcon.svg';
 import LinkedIcon from '../../assets/svg/linkedIcon.svg';
 import whatsappIcon from '../../assets/svg/whatsapp.svg';
+import DownloadIcon from '../../assets/svg/download.svg';
 // import {ReactComponent as GamilIcon} from '../../assets/svg/gmailIcon.svg'
 import FooterHome from './footer';
 import { IconType } from '../../utils/enum/iconType';
 import userInfo from '../../userInfo/userInfo';
 import Navbar from '../navbar/navbar';
+import WebSkills from '../skills/skills';
+import Portfolio from '../about/portfolio/portfolio';
 
 // import gif from '../../assets/gif/atom.gif';
 
@@ -47,6 +50,10 @@ const WebHome = () => {
   window.open(`https://wa.me/911234567890?text=${encodedMessage}`, "_blank");
 };
   console.log(IconType, "icons")
+  const handleDownload=()=>{
+ 
+
+  }
   return (
     <>
       <div className="bg-split">
@@ -107,6 +114,17 @@ const WebHome = () => {
               <img src={whatsappIcon} className='icon' />
             </div>
           </div>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }} onClick={handleDownload}>
+
+            <div style={{ position: "relative" }}>
+              <img className='iconBackground' src={BorderIcon} />
+            </div>
+            <div style={{ position: "absolute" }}>
+               <a href='/Ganesh S.pdf' download={'Resume_ganesh.pdf'} >
+              <img src={DownloadIcon} className='icon' />
+            </a>
+            </div>
+          </div>
 
 
 
@@ -114,6 +132,7 @@ const WebHome = () => {
 
       </div>
       <FooterHome />
+     
 
 
     </>

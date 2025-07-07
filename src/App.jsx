@@ -8,9 +8,9 @@ import MobileHome from './components/home/mobile'
 import WebHome from './components/home/webHome'
 import WebSkills from './components/skills/skills'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import WebAbout from './components/about/webAbout'
 import LayoutWithNavbar from './navbarRoute'
 import Portfolio from './components/about/portfolio/portfolio'
+import WebContact from './components/about/webAbout'
 
 function App() {
 
@@ -26,12 +26,13 @@ function App() {
       <Routes >
         {/* pages with Navbar */}
         <Route element={!isMobile ? <LayoutWithNavbar/>:""}>
-        <Route path="/contact" element={!isMobile ? <WebHome /> : ""} />
+        <Route path="/about" element={!isMobile ? <WebHome /> : ""} />
         <Route path="/" element={!isMobile ? <WebHome /> : ""} />
         <Route path="/skills" element={ !isMobile ? <WebSkills/> :""} />
+        <Route path="/contact" element={ !isMobile ? <WebContact/> :""} />
+
        </Route>
        {/* pages without navbar */}
-        <Route path="/about" element={ !isMobile ? <WebAbout/> :""} />
         <Route path="/portfolio" element={ !isMobile ? <Portfolio/> :""} />
       </Routes>
     </BrowserRouter>
