@@ -17,7 +17,7 @@ import { IconType } from '../../utils/enum/iconType';
 import userInfo from '../../userInfo/userInfo';
 import Navbar from '../navbar/navbar';
 import WebSkills from '../skills/skills';
-import Portfolio from '../about/portfolio/portfolio';
+import Portfolio from '../portfolio/portfolio';
 
 // import gif from '../../assets/gif/atom.gif';
 
@@ -26,7 +26,7 @@ const WebHome = () => {
   
 
   const handleIconClick = (type: string) => {
-    debugger;
+    //*;
     switch (type) {
       case IconType.MAIL:
         window.open(`mailto:${userInfo?.userEmail}`)
