@@ -2,14 +2,15 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion';
 import Header from '../../../assets/svg/portfolio/portfolio_header.svg';
-import closeIcon from '../../../assets/svg/close1.svg'
-import img1 from '../../../assets/png/ass1.png';
-import img2 from '../../../assets/png/ass2.png';
-import img3 from '../../../assets/png/ass3.png';
-import img4 from '../../../assets/png/ass4.png';
-import img5 from '../../../assets/png/ass5.png';
-import img6 from '../../../assets/png/ass6.png';
-import img7 from '../../../assets/png/ass7.png';
+// import closeIcon from '../../../assets/svg/close2.svg'
+import closeIcon from '../../assets/svg/close2.svg'
+import img1 from '../../assets/png/ass1.png';
+import img2 from '../../assets/png/ass2.png';
+import img3 from '../../assets/png/ass3.png';
+import img4 from '../../assets/png/ass4.png';
+import img5 from '../../assets/png/ass5.png';
+import img6 from '../../assets/png/ass6.png';
+import img7 from '../../assets/png/ass7.png';
 
 
 import './portfolio.scss'

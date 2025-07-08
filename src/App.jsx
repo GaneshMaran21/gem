@@ -9,7 +9,7 @@ import WebHome from './components/home/webHome'
 import WebSkills from './components/skills/skills'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LayoutWithNavbar from './navbarRoute'
-import Portfolio from './components/about/portfolio/portfolio'
+import Portfolio from './components/portfolio/portfolio'
 import WebContact from './components/about/webAbout'
 
 function App() {
