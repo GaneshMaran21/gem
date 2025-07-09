@@ -10,8 +10,11 @@ function sendEmail (payload,callback) {
         configEmail?.configEmail?.template,
         payload,
         configEmail?.configEmail?.publicKey,
-    ).then((res)=>{callback.success(),(error)=>{
-        console.log(error,"errorinEmail")
-        callback.failure()}})
+    ).then((res)=>{callback.success()}).catch((error)=>
+    {
+         console.log(error,"Failure")
+        callback.failure()
+    }
+    )
 }
 export default sendEmail

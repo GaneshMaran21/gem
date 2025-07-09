@@ -17,6 +17,7 @@ const WebContact = () => {
   const [showSuccessModal,setShowSuccessModal] = useState(false)
   const [showFailureModal,setShowFailureModal] = useState(false)
   const [isLoading,setIsLoading] = useState(false)
+  const [timeOutError,setTimeOutError] = useState(false)
   const handlePhoneNumber=(e)=>{
     //*
     
@@ -51,6 +52,7 @@ const WebContact = () => {
   const emailSendSuccess=()=>{ 
     debugger
     setIsLoading(false)
+    setTimeOutError(false)
     setShowSuccessModal(true)
     console.log("success")
   }
@@ -58,6 +60,7 @@ const WebContact = () => {
     debugger
     setIsLoading(false)
     setShowFailureModal(true)
+    setTimeOutError(false)
     console.log("failure")
   }
   const callback={
@@ -81,7 +84,11 @@ const WebContact = () => {
         message:message ? message : "Nothing",
         
       }
+      
       sendEmail(payload,callback)
+      // setTimeout(()=>{
+      //   setTimeOutError(true)
+      // },20000)
     }
   }
   
@@ -125,7 +132,7 @@ const WebContact = () => {
             </p>
         </div>
         </div>
-        <Modal showSuccessStatus={showSuccessModal} showFailureStatus={showFailureModal} setShowSuccessModal={setShowSuccessModal} setShowFailureModal={setShowFailureModal} isLoading={isLoading} />
+        <Modal showSuccessStatus={showSuccessModal} showFailureStatus={showFailureModal} setShowSuccessModal={setShowSuccessModal} setShowFailureModal={setShowFailureModal} isLoading={isLoading} timeOutError={timeOutError}/>
  {/* <input type='textarea' className='inputTextBox' placeholder='Feed Back' required/> */}
       <div style={{height:"40px"}}>
       

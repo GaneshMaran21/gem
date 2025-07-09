@@ -6,7 +6,7 @@ import LoadingGif from '../../assets/gif/AnimationLoading1.gif'
 import Close from '../../assets/svg/closeRed.svg'
 import { useNavigate } from 'react-router-dom'
 const Modal = (props) => {
-    const {showSuccessStatus,showFailureStatus,setShowSuccessModal=()=>{},setShowFailureModal=()=>{},isLoading} = props;
+    const {showSuccessStatus,showFailureStatus,setShowSuccessModal=()=>{},setShowFailureModal=()=>{},isLoading,timeOutError,setTimeOutError=()=>{}} = props;
     const navigate=useNavigate()
     const handleClick=(type)=>{
       if(type==="success"){
@@ -16,6 +16,9 @@ const Modal = (props) => {
       else if(type==='failure'){
         setShowFailureModal(false)
         
+      }
+      else if(type==="timeOut"){
+        setTimeOutError(false)
       }
     }
   return (
@@ -66,6 +69,25 @@ const Modal = (props) => {
         </div> 
         </div>
     }
+     {/* {timeOutError &&  
+      <div className='modal-overlay'>
+       <div className='modal'>
+          <div className='modalContainer'>
+             <div style={{position:"absolute",right:0,top:0,padding:12 ,cursor:"pointer"}} onClick={()=>handleClick("timeOut")}>
+            <img src={Close} height={30}  />
+              </div>
+              <p className='modalWrongText'>
+               Sorry! Session Timed Out
+              </p>
+             <img src={WrongGif} height={100}/>
+              <p className='modalTryAgainText' onClick={()=>handleClick("timeOut")}>
+                Please Try Again
+              </p>           
+          
+          </div>
+        </div> 
+        </div>
+    } */}
    </>
   )
 }
