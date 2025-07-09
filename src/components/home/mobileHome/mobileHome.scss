@@ -51,12 +51,17 @@
 //     margin-top: 58rem; /* adjust based on your layout */
 //   }
 // }
-@media screen 
-  and (device-width: 375px) 
-  and (device-height: 667px) 
-  and (-webkit-device-pixel-ratio: 2) {
+// @media screen 
+//   and (device-width: 375px) 
+//   and (device-height: 667px) 
+//   and (-webkit-device-pixel-ratio: 2) {
   
+//   .portfolioContainer {
+//     margin-top: 14rem; 
+//   }
+// }
+@media screen and (max-width: 375px) and (max-height: 667px) {
   .portfolioContainer {
-    margin-top: 14rem; 
+    margin-top: 14rem;
   }
 }
