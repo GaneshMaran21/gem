@@ -14,7 +14,7 @@ import WebContact from './components/about/webAbout'
 import MobileNavbar from './components/navbar/mobileNavBar'
 import MobileNavBarLayout from './mobileNavbar'
 import MobileHome from './components/home/mobileHome/mobileHome'
-
+import { Analytics } from '@vercel/analytics/react'
 function App() {
 
     const isMobile = useMediaQuery('(max-width:550px)')
@@ -39,8 +39,8 @@ function App() {
         <Route path="/portfolio" element={ !isMobile ? <Portfolio isWeb={true}/> : <MobileHome pathname={'Portfolio'}/>} />
       </Routes>
     </BrowserRouter>
-
-
+    <Analytics />
+   
     </>
   )
 }
