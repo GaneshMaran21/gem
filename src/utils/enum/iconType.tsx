@@ -2,5 +2,6 @@
     MAIL="email",
     GIT="git",
     LINKEDIN="linkedIn",
-    WHATSAPP="whatsApp"
+    WHATSAPP="whatsApp",
+    INSTAGRAM="instagram"
 }

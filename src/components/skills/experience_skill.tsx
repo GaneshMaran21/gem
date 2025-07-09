@@ -10,16 +10,17 @@ import node from '../../assets/svg/node.svg';
 import react from '../../assets/svg/react.svg';
 import rn2 from '../../assets/svg/rn2.svg';
 import figma from '../../assets/svg/figma.svg';
+import redux from '../../assets/svg/redux.svg';
 
 
-const ExpereiceSkill = () => {
+const ExpereiceSkill = ({isWeb}) => {
   return (
     <>
-      <div className='using'>
+      <div className=  'using' >
             <span className='usingText'>
               Using Now
             </span>
-            <div className='usingIcon'>
+            <div className='usingIcon' >
               <div style={{flexDirection:"column",gap:8,justifyItems:'center',display:"flex",alignItems:"center"}}>
               <img src={Html} alt="" height={50} width={50}/>
               <p className='usingIconText'>HTML</p>
@@ -51,6 +52,10 @@ const ExpereiceSkill = () => {
               <div style={{flexDirection:"column",gap:8,justifyItems:'center',display:"flex",alignItems:"center"}}>
                <img src={rn2} alt="" height={50} width={50} />
               <p className='usingIconText'>React Native</p>
+              </div>
+              <div style={{flexDirection:"column",gap:8,justifyItems:'center',display:"flex",alignItems:"center"}}>
+               <img src={redux} alt="" height={50} width={50} />
+              <p className='usingIconText'>Redux</p>
               </div>
               <div style={{flexDirection:"column",gap:8,justifyItems:'center',display:"flex",alignItems:"center"}}>
               <img src={node} alt="" height={50} width={50} />

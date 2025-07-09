@@ -29,13 +29,13 @@ const WebHome = () => {
     //*;
     switch (type) {
       case IconType.MAIL:
-        window.open(`mailto:${userInfo?.userEmail}`)
+        window.open(`mailto:${userInfo?.userInfo?.userEmail}`)
         break;
       case IconType.GIT:
-        window.open(`https://github.com/${userInfo?.userGit}`, "_blank");
+        window.open(`https://github.com/${userInfo?.userInfo?.userGit}`, "_blank");
         break;
       case IconType.LINKEDIN:
-        window.open(`https://www.linkedin.com/in/${userInfo?.userLinked}`, "_blank");
+        window.open(`https://www.linkedin.com/in/${userInfo?.userInfo?.userLinked}`, "_blank");
         break;
       case IconType.WHATSAPP:
         const message = "Hello Ganesh, I want to connect with you"
@@ -61,7 +61,7 @@ const WebHome = () => {
         <div className="left-half"></div>
         <div className="right-half"></div>
       </div>
-      <Navbar/>
+      {/* <Navbar/> */}
       <div className="imageContainer">
         <img src={Myimage1} className="cut-image-img" />
       </div>

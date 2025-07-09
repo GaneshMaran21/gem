@@ -30,6 +30,22 @@
     border-bottom-color: #000;
     background-color: #ccc;
 }
+.inputBox2{
+    height: 30px;
+    min-width: 100px;
+    width: 200px;
+    border-top-width: 0px;
+    border-top-color: #ccc;
+    border-top-style: none;
+    border-right-color: #ccc;
+    border-right-style: none;
+    border-left-width: 3px;
+    border-bottom-width: 3px;
+    border-radius: 0px;
+    border-left-color: #000;
+    border-bottom-color: #000;
+    background-color: #ccc;
+}
 input::placeholder{
   color: #8B8B8B;
     font-size: 1rem;
@@ -86,6 +102,33 @@ input {
     // border: 1px solid red;
 
 }
+.inputTextBox2{
+   height: 100px;
+    border-top-width: 0px;
+    border-top-color: #ccc;
+    border-top-style: none;
+    border-right-color: #ccc;
+    border-right-style: none;
+    border-left-width: 3px;
+    border-bottom-width: 3px;
+    border-radius: 0px;
+    border-left-color: #000000;
+    border-bottom-color: #000;
+    background-color: #ccc;
+    min-width: 100px;
+    width: 200px;
+    resize: vertical;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    white-space: pre-wrap;
+    font-size: 1.1rem;
+    font-weight: 550;
+    color: #000;
+    padding: 12px
+    // border: 1px solid red;
+
+}
 .inputTextBox::placeholder{
     //   top:0;
     // position: absolute;
@@ -95,7 +138,24 @@ input {
 
     // border: 1px solid #000;
 }
+.inputTextBox2::placeholder{
+    //   top:0;
+    // position: absolute;
+  font-family: 'Courier New', Courier, monospace;
+  color: #8B8B8B;
+
+
+    // border: 1px solid #000;
+}
 .inputTextBox:focus {
+  font-family: 'Courier New', Courier, monospace;
+   border-left-color: #000000;
+    border-bottom-color: #000;
+    outline: none;
+    // border-right-style: none;
+//   border-style: none; 
+}
+.inputTextBox2:focus {
   font-family: 'Courier New', Courier, monospace;
    border-left-color: #000000;
     border-bottom-color: #000;
@@ -135,6 +195,11 @@ input {
     padding: 2px 20px;
     // border: 1px solid red
 }
+.bodytextContainer2{
+    width: 350px;
+    padding: 2px 20px;
+    
+}
 .inputFields{
  justify-content: center;
  display: flex;
@@ -143,6 +208,7 @@ input {
  gap: 3rem;
  margin-top: 30px;
 }
+
 .submit{
     padding-left:  40px;
     padding-right: 40px;
@@ -241,6 +307,12 @@ input {
   align-items: center;
   justify-content: center;
   pointer-events: auto;
+}
+.footerText{
+     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color:white;
+    
 }
 body{
     background-color: #ccc;

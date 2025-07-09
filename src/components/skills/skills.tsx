@@ -7,7 +7,7 @@ import Learning from './learningSkill';
 import ExtraSkill from './extra_skill';
 
 
-const WebSkills = () => {
+const WebSkills = ({isWeb}) => {
   return (
    
 <>
@@ -18,9 +18,12 @@ const WebSkills = () => {
           SKILLS
         </span>
       </div>
-      <ExpereiceSkill/>
+      <ExpereiceSkill isWeb={isWeb}/>
       <Learning/>
       <ExtraSkill/>
+      <div style={{height:40}}>
+
+      </div>
      
 
   </div>

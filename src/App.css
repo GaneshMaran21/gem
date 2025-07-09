@@ -33,7 +33,8 @@ body, html {
   margin: 0;
   padding: 0;
   background: black;
-  overflow-x: hidden; /* Prevent unwanted scroll from skew */
+  overflow-x: hidden;
+  height: 100%; /* Prevent unwanted scroll from skew */
 }
 html{
     font-size: clamp(12px, 1.5vw,18px );
