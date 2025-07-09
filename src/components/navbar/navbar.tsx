@@ -44,7 +44,7 @@ const Navbar = () => {
             const isContactTab =  location.pathname.length>1 ? location.pathname : "/about"
             console.log(isSelected,"isSelected")
             return (
-              <div className={isSelected  ? location.pathname ==='/skills' || location.pathname==='/contact' ? 'selectedTab2' : 'selectedTab' : isContactTab ===routes[ind] ? "selectedTab" : ""}>
+              <div key={ind} className={isSelected  ? location.pathname ==='/skills' || location.pathname==='/contact' ? 'selectedTab2' : 'selectedTab' : isContactTab ===routes[ind] ? "selectedTab" : ""}>
                 <h3 style={{ flexWrap: "nowrap", cursor: 'pointer', fontSize: "1rem", color:getColor(name)  }} onClick={() => handleTabSelection(ind)}>{name}</h3>
               </div>
             )

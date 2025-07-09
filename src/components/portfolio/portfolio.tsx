@@ -22,17 +22,19 @@ const projects = [
   { title: 'Portfolio Page', image: img7 },
 ];
 const project2=[
-   { title: 'Landing + About Section', image: img4 },
-  { title: 'Skills Section', image: img5 },
-  { title: 'Portfolio Banner', image: img6 },
+   { title: 'Layouts', image: img4 },
+  { title: 'Work In Progress', image: img5 },
+  { title: 'Find Trending Movies', image: img6 },
 ]
 
-const Portfolio = () => {
+const Portfolio = ({isWeb}) => {
   const navigate=useNavigate();
   return (<>
+  {isWeb && 
   <div className='navigateBar' onClick={()=>navigate(-1)}>
      <img className='icons' src={closeIcon}/>
   </div>
+}
     <section className="portfolio-section">
       <h2 className="portfolio-title">My portfolio</h2>
       <div className="portfolio-grid">
