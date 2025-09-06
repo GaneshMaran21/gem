@@ -14,7 +14,7 @@ import Modal from '../Modal/modal'
 import { IconType } from '../../utils/enum/iconType'
 import userInfo from '../../userInfo/userInfo'
 
-const WebContact = ({isWeb}) => {
+const WebContact = ({isWeb,setSelectedTab}) => {
   const navigate=useNavigate()
   const [name,setName] = useState("")
   const [email,setEmail] = useState("")
@@ -111,6 +111,7 @@ const WebContact = ({isWeb}) => {
       const el=document.getElementById(id)
       if(el){
         el.scrollIntoView({behavior:"smooth"})
+        setSelectedTab('About Me')
       }
     }
   }
