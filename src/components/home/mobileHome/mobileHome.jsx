@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Myimage1 from '../../../assets/png/myC2.png';
 import mail from '../../../assets/svg/mobile/email.svg'
 import git from '../../../assets/svg/mobile/gitHub.svg'
@@ -16,7 +16,7 @@ import FooterHome from '../footer';
 
 const MobileHome = ({pathname}) => {
 
-
+      const [selectedTab,setSelectedTab] = useState("")
       const handleIconClick = (type) => {
         debugger
         switch (type) {
@@ -46,7 +46,7 @@ const MobileHome = ({pathname}) => {
       },[])
 
   return (<>
-    <MobileNavbar/>
+    <MobileNavbar selectedTab={selectedTab} setSelectedTab={setSelectedTab}/>
     <div id='About Me' style={{
       position:"relative"
     }}>
@@ -95,7 +95,7 @@ const MobileHome = ({pathname}) => {
     <Portfolio isWeb={false}/>
     </div>
     <div id='Contact Me'>
-        <WebContact isWeb={false}/>
+        <WebContact isWeb={false} setSelectedTab={setSelectedTab}/>
     </div>
   </> )
 }

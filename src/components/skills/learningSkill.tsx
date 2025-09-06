@@ -1,5 +1,5 @@
 import React from 'react'
-import mango from '../../assets/svg/mongo.svg';
+import nest from '../../assets/svg/Nest.js.svg';
 import sql from '../../assets/svg/sql.svg';
 
 const Learning = () => {
@@ -11,8 +11,8 @@ const Learning = () => {
            </span>
            <div className='usingIcon'>
              <div style={{flexDirection:"column",gap:8,justifyItems:'center',display:"flex",alignItems:"center"}}>
-             <img src={mango} alt="" height={50} width={50}/>
-             <p className='usingIconText'>Mango DB</p>
+             <img src={nest} alt="" height={50} width={50}/>
+             <p className='usingIconText'>Nest JS</p>
              </div>
              <div style={{flexDirection:"column",gap:8,justifyItems:'center',display:"flex",alignItems:"center"}}>
              <img src={sql} alt="" height={50} width={50} />
